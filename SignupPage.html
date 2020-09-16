@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms 2 </title>
+</head>
+<body>
+    <h1> SignUp Page</h1>
+    <form action="#" id = 'myForm' name = 'myForm' onsubmit="return validation()">
+        <div>
+            <br><br>
+            <label for="name" style="word-spacing: 70px;"> Name </label>
+            <input type="text" name="name" id="name" placeholder="Ex: John Wick">
+            <span id="namemsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="email" style="word-spacing: 69px;"> Email </label>
+            <input type="text" name="email" id="email" placeholder="Ex: John@gmail.com">
+            <span id="emailmsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="country" style="word-spacing: 57px;"> Country </label>
+            <input type="text" name="country" id="country" placeholder="Ex: Australia">
+            <span id="countrymsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="state" style="word-spacing: 79px;"> State </label>
+            <input type="text" name="state" id="state" placeholder="Ex: New York">
+            <span id="statemsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="city" style="word-spacing: 84px;"> City </label>
+            <input type="text" name="city" id="city" placeholder="Ex: Chicago">
+            <span id="citymsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="postalcode" style="word-spacing: 40px;"> PostalCode </label>
+            <input type="text" name="postalcode" id="postalCode" placeholder="Ex: 516001">
+            <span id="postalmsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="address" style="word-spacing: 62px;"> Address </label>
+            <input type="text" name="address" id="address" placeholder="Ex: 5/72 Chicago">
+            <span id="addmsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="mobile" style="word-spacing: 70px;"> Mobile </label>
+            <input type="text" name="mobile" id="mobile" placeholder="Ex: +1 77777 77777">
+            <span id="mobilemsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <label for="pass" style="word-spacing: 57px;"> Password </label>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password">
+            <br><br>
+            <!-- An element to toggle between password visibility. -->
+            <span id="passmsg" style="color:magenta"></span><br>
+            <input type="checkbox" onclick="myFunction()"> Show Password
+        </div>
+        <div>
+            <br><br>
+            <!-- <input type="submit" name="submit" value="Submit" onclick="mySubmit()"> -->
+            <button onclick="mySubmit()"> Submit </button>
+        </div>
+    </form>
+    <div>
+        <p style="color:purple" id="msg"></p>
+    </div>
+    <script src="Signuppage.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms 2 </title>
+</head>
+<body>
+    <h1> Login Page</h1>
+    <form action="#" id = 'myForm' name = 'myForm' onsubmit="return validation()">
+        <div>
+            <br><br>
+            <label for="name" style="word-spacing: 50px;"> Name </label>
+            <input type="text" name="name" id="name">
+            <span id="namemsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br>
+            <label for="email" style="word-spacing: 49px;"> Email </label>
+            <input type="text" name="email" id="email">
+            <span id="emailmsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br>
+            <label for="pass" style="word-spacing: 28px;"> Password </label>
+            <input type="password" name="pass" id="pass" >
+            <br><br>
+            <!-- An element to toggle between password visibility. -->
+            <input type="checkbox" onclick="myFunction()"> Show Password
+            <span id="passmsg" style="color:magenta"></span>
+        </div>
+        <div>
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+    <div>
+        <p style="color:purple" id="msg"></p>
+    </div>
+    <script src="Loginpage.js"></script>
+</body>
+</html>
